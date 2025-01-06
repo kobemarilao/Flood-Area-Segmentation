@@ -241,7 +241,7 @@ elif menu_selection == 'About Us':
     # In each column, display an image and its name
 
     with col1:
-        st.image("blob:https://www.messenger.com/345891dd-97e3-4134-b3da-6d0f5926e853")
+        st.image("https://scontent.fdvo3-1.fna.fbcdn.net/v/t39.30808-6/326794715_482660030731466_5944812296076730144_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEL_qfBgIMlOXhumezYGCeDk9OLQ8vs3V2T04tDy-zdXU5HaHujwXDgo8e5MbIjRwqE8z5ekkhP4Nbobe2G2pGE&_nc_ohc=TMtHddFri0IQ7kNvgGGL1Ji&_nc_zt=23&_nc_ht=scontent.fdvo3-1.fna&_nc_gid=AsaIrbfoIQn1NH_aJScmhHN&oh=00_AYBzISjEN3jt5JpCYQsLHOpYz1SBfhwvn9ZGioHsfHPbGg&oe=67814248")
         st.markdown('<p style="text-align: center; margin-bottom: 0;">Kean B. David</p>', unsafe_allow_html=True)
         st.markdown('<p style="text-align: center; margin-top: 0;">klbdavid00095@usep.edu.ph</p>', unsafe_allow_html=True)
 
@@ -253,7 +253,7 @@ elif menu_selection == 'About Us':
 
     st.write("\n")
     st.markdown("""
-    The dashboard was developed by a dedicated team of 3, namely, Sharil Mives Castillo, Christian Kobe Marilao, and Yza Prochina. 
+    The dashboard was developed by a dedicated team of 2, namely, Kean David and  Christian Kobe Marilao. 
     We are 3rd year Bachelor of Science in Computer Science Major in Data Science (BSCS-DS) students at University of Southeastern Philippines. 
     Combining each other's expertise, we designed and implemented a dashboard to address the specific challenges of flood management and navigation safety all over the Philippines. 
     This dashboard is for the developer’s Learning Evidence in their Applied Data Science subject/course.
