@@ -9,27 +9,60 @@ import matplotlib.pyplot as plt
 from torchvision import models
 import segmentation_models_pytorch as smp
 import cv2 
-import collections.abc as container_abcs
+import gdown
+import os
+
+# Function to download and load the first model
+# @st.cache_resource
+# def load_model():
+#     url = "https://drive.google.com/file/d/1EuzZeEwa8Gd1lHGyL13n7uOVp0rHiNoS/view?usp=sharing"
+#     output = "road.pth"
+#     gdown.download(url, output, quiet=False, fuzzy=True)
+    
+#     model = torch.load(output, map_location=torch.device('cpu'))
+#     model.eval()
+#     return model
 
 @st.cache_resource
 def load_model():
-    model = torch.load("D:/Downloads/ads/road.pth", map_location=torch.device('cpu'))
-    model.eval()
-    return model
+    model_url = "https://drive.google.com/uc?id=1BFvEeqQHlivpGjxUyj1CX-uME8GhTUQI"  
+    model_path = "road.pth"
 
-@st.cache_resource 
+    # Check if the model file already exists locally
+    if not os.path.exists(model_path):
+        gdown.download(model_url, model_path, quiet=False)
+
+
+
+@st.cache_resource
 def load_model2():
-    model2 = smp.Unet(
-        encoder_name="resnet50",  # 
-        encoder_weights="imagenet",  
-        in_channels=3,  
-        classes=1  
-    )
-    model2.load_state_dict(torch.load("D:/Downloads/ads/flood.pth", map_location=torch.device('cpu')))
-    model2.to('cpu')
-    model2.eval()
-    return model2
+    model_url2 = "https://drive.google.com/file/d/1EuzZeEwa8Gd1lHGyL13n7uOVp0rHiNoS/view?usp=sharing"  
+    model_path2 = "flood.pth"
 
+    # Check if the model file already exists locally
+    if not os.path.exists(model_path2):
+        gdown.download(model_url2, model_path2, quiet=False)
+
+
+# Function to download and load the second model
+# @st.cache_resource 
+# def load_model2():
+#     url = "https://drive.google.com/file/d/1EuzZeEwa8Gd1lHGyL13n7uOVp0rHiNoS/view?usp=drive_link"
+#     output = "flood.pth"
+#     gdown.download(url, output, quiet=False, fuzzy=True)
+    
+#     model2 = smp.Unet(
+#         encoder_name="resnet50",  
+#         encoder_weights="imagenet",  
+#         in_channels=3,  
+#         classes=1  
+#     )
+#     model2.load_state_dict(torch.load(output, map_location=torch.device('cpu')))
+#     model2.to('cpu')
+#     model2.eval()
+#     return model2
+
+# Load the models
 model = load_model()
 model2 = load_model2()
 
