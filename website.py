@@ -241,7 +241,7 @@ elif menu_selection == 'About Us':
     # In each column, display an image and its name
 
     with col1:
-        st.image("https://scontent.fdvo3-1.fna.fbcdn.net/v/t39.30808-6/326794715_482660030731466_5944812296076730144_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEL_qfBgIMlOXhumezYGCeDk9OLQ8vs3V2T04tDy-zdXU5HaHujwXDgo8e5MbIjRwqE8z5ekkhP4Nbobe2G2pGE&_nc_ohc=TMtHddFri0IQ7kNvgGGL1Ji&_nc_zt=23&_nc_ht=scontent.fdvo3-1.fna&_nc_gid=AsaIrbfoIQn1NH_aJScmhHN&oh=00_AYBzISjEN3jt5JpCYQsLHOpYz1SBfhwvn9ZGioHsfHPbGg&oe=67814248")
+        st.image("https://scontent.fdvo3-1.fna.fbcdn.net/v/t1.15752-9/471936567_1601976327106198_5217140183685686724_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHboSUuDhL8f-QTRTB0OJ5_SUjrOqF4Fv1JSOs6oXgW_a-qWntF1LBb_GwhNQJZObEGKyrye6cOPbYBQjxP8axa&_nc_ohc=t0cQB48NPJUQ7kNvgEQCLce&_nc_zt=23&_nc_ht=scontent.fdvo3-1.fna&oh=03_Q7cD1gF9VNqn2AjHKGT-BlZ1Rdvldhkdia8t-3MIqC3XBPQlIA&oe=67A2E777")
         st.markdown('<p style="text-align: center; margin-bottom: 0;">Kean B. David</p>', unsafe_allow_html=True)
         st.markdown('<p style="text-align: center; margin-top: 0;">klbdavid00095@usep.edu.ph</p>', unsafe_allow_html=True)
 
