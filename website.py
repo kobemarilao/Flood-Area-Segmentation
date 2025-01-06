@@ -1,4 +1,5 @@
 import segmentation_models_pytorch as smp
+print(smp.__version__)
 import streamlit as st
 import streamlit_antd_components as sac
 import torch
@@ -235,21 +236,17 @@ elif menu_selection == 'About Us':
         """, unsafe_allow_html=True)
 
     # Create three columns
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2))
 
     # In each column, display an image and its name
+
     with col1:
-        st.image("https://scontent.fcgy2-1.fna.fbcdn.net/v/t1.15752-9/470051793_1106852564161664_4812549164318226772_n.png?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHOFjzUgi19WE2VoYtrCnzO_PM9kjUhvZX88z2SNSG9lQMz_7neWAAIKpqS_c-61oIM94_X5vX9i4Y4qupaKjfr&_nc_ohc=aOeHFJ4FIrwQ7kNvgF4zA3v&_nc_zt=23&_nc_ht=scontent.fcgy2-1.fna&oh=03_Q7cD1QFVBWLFH-ZsZP4iv-k8aVe1a4vPUW5MB8LkvfVUFZTl5A&oe=678071E5")  # Replace with your image path
-        st.markdown('<p style="text-align: center; margin-bottom: 0;">Yza J. Prochina</p>', unsafe_allow_html=True)
-        st.markdown('<p style="text-align: center; margin-top: 0;">yjprochina00114@usep.edu.ph</p>', unsafe_allow_html=True)
+        st.image("https://scontent.fdvo3-1.fna.fbcdn.net/v/t39.30808-6/326794715_482660030731466_5944812296076730144_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEL_qfBgIMlOXhumezYGCeDk9OLQ8vs3V2T04tDy-zdXU5HaHujwXDgo8e5MbIjRwqE8z5ekkhP4Nbobe2G2pGE&_nc_ohc=TMtHddFri0IQ7kNvgGGL1Ji&_nc_zt=23&_nc_ht=scontent.fdvo3-1.fna&_nc_gid=AsaIrbfoIQn1NH_aJScmhHN&oh=00_AYBzISjEN3jt5JpCYQsLHOpYz1SBfhwvn9ZGioHsfHPbGg&oe=67814248")
+        st.markdown('<p style="text-align: center; margin-bottom: 0;">Kean B. David</p>', unsafe_allow_html=True)
+        st.markdown('<p style="text-align: center; margin-top: 0;">klbdavid00095@usep.edu.ph</p>', unsafe_allow_html=True)
 
     with col2:
-        st.image("https://scontent.fcgy2-3.fna.fbcdn.net/v/t1.15752-9/462578127_2056613758134848_4439941361628263564_n.png?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGpqEMEK0dx9PuDg9XeEISsQh3SAF2oxPVCHdIAXajE9c43yD33tM84d6EQ-Wwc4xhGAj8PemS8bC3pcZMR1tf4&_nc_ohc=soF8WApwhrwQ7kNvgERp3NM&_nc_zt=23&_nc_ht=scontent.fcgy2-3.fna&oh=03_Q7cD1QFR_QiJZNH97JE4YsQ3V8NCdIJevOx3AlzEZYVW-6gCHA&oe=678092DB")  # Replace with your image path
-        st.markdown('<p style="text-align: center; margin-bottom: 0;">Sharill Mives B. Castillo</p>', unsafe_allow_html=True)
-        st.markdown('<p style="text-align: center; margin-top: 0;">smbcastillo00092@usep.edu.ph</p>', unsafe_allow_html=True)
-
-    with col3:
-        st.image("https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/462566969_2048769672260527_3106865969120221634_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGDeKrANqSWjG9ZYH5tKW0vai9tgUnM2P9qL22BSczY_1gHbQYgDrgYPogIb1Gwa6m3Ky0RvqAiQZ0pqiUYgW9-&_nc_ohc=sRdJgTrC3EoQ7kNvgEZAcLq&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&oh=03_Q7cD1QEexa_7keBK-HlHNEMHf4M7WX2CCevJBWgphfkgytXexw&oe=67808BB5")  # Replace with your image path
+        st.image("https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/462566969_2048769672260527_3106865969120221634_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGDeKrANqSWjG9ZYH5tKW0vai9tgUnM2P9qL22BSczY_1gHbQYgDrgYPogIb1Gwa6m3Ky0RvqAiQZ0pqiUYgW9-&_nc_ohc=sRdJgTrC3EoQ7kNvgEZAcLq&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&oh=03_Q7cD1QEexa_7keBK-HlHNEMHf4M7WX2CCevJBWgphfkgytXexw&oe=67808BB5")  
         st.markdown('<p style="text-align: center; margin-bottom: 0;">Christian Kobe A. Marilao</p>', unsafe_allow_html=True)
         st.markdown('<p style="text-align: center; margin-top: 0;">ckamarilao@usep.edu.ph</p>', unsafe_allow_html=True)
 
