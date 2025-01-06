@@ -242,8 +242,8 @@ elif menu_selection == 'About Us':
 
     with col1:
         st.image("https://scontent.fdvo3-1.fna.fbcdn.net/v/t1.15752-9/471936567_1601976327106198_5217140183685686724_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHboSUuDhL8f-QTRTB0OJ5_SUjrOqF4Fv1JSOs6oXgW_a-qWntF1LBb_GwhNQJZObEGKyrye6cOPbYBQjxP8axa&_nc_ohc=t0cQB48NPJUQ7kNvgEQCLce&_nc_zt=23&_nc_ht=scontent.fdvo3-1.fna&oh=03_Q7cD1gF9VNqn2AjHKGT-BlZ1Rdvldhkdia8t-3MIqC3XBPQlIA&oe=67A2E777")
-        st.markdown('<p style="text-align: center; margin-bottom: 0;">Kean B. David</p>', unsafe_allow_html=True)
-        st.markdown('<p style="text-align: center; margin-top: 0;">klbdavid00095@usep.edu.ph</p>', unsafe_allow_html=True)
+        st.markdown('<p style="text-align: left; margin-bottom: 0;">Kean B. David</p>', unsafe_allow_html=True)
+        st.markdown('<p style="text-align: left; margin-top: 0;">klbdavid00095@usep.edu.ph</p>', unsafe_allow_html=True)
 
     with col2:
         st.image("https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/462566969_2048769672260527_3106865969120221634_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGDeKrANqSWjG9ZYH5tKW0vai9tgUnM2P9qL22BSczY_1gHbQYgDrgYPogIb1Gwa6m3Ky0RvqAiQZ0pqiUYgW9-&_nc_ohc=sRdJgTrC3EoQ7kNvgEZAcLq&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&oh=03_Q7cD1QEexa_7keBK-HlHNEMHf4M7WX2CCevJBWgphfkgytXexw&oe=67808BB5")  
