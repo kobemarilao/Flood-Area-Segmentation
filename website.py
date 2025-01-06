@@ -1,4 +1,5 @@
-
+import segmentation_models_pytorch as smp
+print(smp.__version__)
 import streamlit as st
 import streamlit_antd_components as sac
 import torch
@@ -7,7 +8,6 @@ from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 from torchvision import models
-import segmentation_models_pytorch as smp
 import cv2 
 import gdown
 import os
@@ -28,7 +28,7 @@ def load_model():
 @st.cache_resource
 def load_model2():
     model2 = smp.Unet(
-        encoder_name="resnet50",  # 
+        encoder_name="resnet50",  
         encoder_weights="imagenet",  
         in_channels=3,  
         classes=1  
