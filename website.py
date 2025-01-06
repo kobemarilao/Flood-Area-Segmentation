@@ -1,5 +1,4 @@
 import segmentation_models_pytorch as smp
-print(smp.__version__)
 import streamlit as st
 import streamlit_antd_components as sac
 import torch
