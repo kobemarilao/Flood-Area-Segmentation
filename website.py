@@ -236,7 +236,7 @@ elif menu_selection == 'About Us':
         """, unsafe_allow_html=True)
 
     # Create three columns
-    col1, col2 = st.columns(2))
+    col1, col2 = st.columns(2)
 
     # In each column, display an image and its name
 
